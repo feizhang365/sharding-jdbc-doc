@@ -21,7 +21,7 @@ next = "/02-guide/sharding/"
 
 图中蓝色部分表示的是Sharding-JDBC的配置对象，提供灵活多变的配置方式。
 ShardingRuleConfiguration是分库分表配置的核心和入口，它可以包含多个TableRuleConfiguration和MasterSlaveRuleConfiguration。每一组相同规则分片的表配置一个TableRuleConfiguration。如果需要分库分表和读写分离共同使用，每一个读写分离的逻辑库配置一个MasterSlaveRuleConfiguration。
-每个TableRuleConfiguration对应一个ShardingStrategyConfiguration，它有5中实现类可供选择。关于分片策略使用的细节，请阅读[分库分表](/02-guide/sharding/)。
+每个TableRuleConfiguration对应一个ShardingStrategyConfiguration，它有5种实现类可供选择。关于分片策略使用的细节，请阅读[分库分表](/02-guide/sharding/)。
 
 仅读写分离使用MasterSlaveRuleConfiguration即可。
 
